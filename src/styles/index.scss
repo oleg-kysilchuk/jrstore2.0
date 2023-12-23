@@ -1,0 +1,111 @@
+@import "./common.scss";
+
+.homepage-links {
+  padding: 50px 20px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding: 50px 0 50px;
+    display: grid;
+    grid-template-columns: minmax(280px, 560px) minmax(280px, 560px);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 40px;
+    grid-row-gap: 100px;
+  }
+
+  &__item {
+  }
+
+  &__link-title {
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      background-color: #333;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}
+
+.homepage-about {
+  padding: 50px 20px;
+  background-color: #faf9f5;
+
+  &__photo {
+    width: 300px;
+    display: block;
+    margin: 0 auto 50px;
+  }
+
+  &__list-wrap {
+    margin: 0 auto;
+    width: 560px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &__list-title {
+    font-size: 14px;
+    line-height: 1.75;
+    margin-bottom: 3px;
+  }
+
+  &__list-item {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+
+    &::before{
+      content: '▪️';
+      position: relative;
+      left: -7px;
+    }
+  }
+}
